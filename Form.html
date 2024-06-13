@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>My Feedback Form</h1>
+    <ul>
+        <li>
+            Name :
+            <input type="text" name="Username" size="30" maxlength="30" />
+        </li>
+        <li>
+            Email :
+            <input type="text" email="Email Address" size="30" maxlength="30" />
+        </li>
+        <li>
+            Password :
+            <input type="password" password="Password" size="30" maxlength="30" />
+        </li>
+        <br />
+        <li>
+            Please Check all the emotions that apply to you:
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Angry" /> Angry
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Sad" /> Sad
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Happy" /> Happy
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Ambivalent" /> Ambivalent
+        </li>
+        <li>
+            How satisfied were you with our services?
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Very satisfied" /> Very satisfied 
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Satisfied" /> Satisfied
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Didn't Care" /> Didn't Care
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Dissatisfied" /> Dissatisfied
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Very Dissatisfied" /> Very Dissatisfied
+        </li>
+        <li>
+            Further comments: <textarea name="comments" cols="20" rows="4"></textarea>
+        </li>
+        <li>
+            Bio photo: <input type="url" name="image" /><input type="submit" name="Choose" value="Choose" />
+        </li>
+        <li>
+            <label for="Username">Location visited</label>
+            <input type="url" name="Location" />
+        </li>                        
+    </ul>
+    <br /><input type="submit" value="Submit" />
+    
+</body>
+</html>
