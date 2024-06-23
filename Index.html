@@ -1,43 +1,71 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Login Services</title>
-    <body>
-        <form>
-            <p>
-                <h1>Novell Services Login</h1>
-                <br />
-                Username :
-                <input type="text" name="Username" size="30" maxlength="30" />
-                <br /> 
-                Password :
-                <input type="password" password="Password" size="30" maxlength="100" /> 
-                <br />
-                City of Employment :
-                <input type="text" city="City Of Employment" size="30" maxlength="50" />
-                <br /> 
-                Web Server :
-                <input type="text" name="Server" size="20" placeholder="-Choose a server-" />
-                <br />
-                <br />
-                <br />
-                <br />
-                Please Specify 
-                <br />
-                Your Role :
-                <input type="radio" name="genre" value="Admin" /> Admin
-                <input type="radio" name="genre" value="Engineer" /> Engineer
-                <input type="radio" name="genre" value="Manager" /> Manager
-                <input type="radio" name="genre" value="Guest" /> Guest <br />
-                Single Sign-on <br />
-                to the following :
-                <input type="checkbox" name="genre" value="Mail" /> Mail
-                <input type="checkbox" name="genre" value="Payroll" /> Payroll
-                <input type="checkbox" name="genre" value="Self-service" /> Self-service
-                <br />
-                <br />
-                <button><width="10" height="10" />Login</button>
-                <button><width="10" height="10" />Reset</button>
-            </p>
-        </form>
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
 </head>
+<body>
+    <h1>My Feedback Form</h1>
+    <ul>
+        <li>
+            Name :
+            <input type="text" name="Username" size="30" maxlength="30" />
+        </li>
+        <li>
+            Email :
+            <input type="text" email="Email Address" size="30" maxlength="30" />
+        </li>
+        <li>
+            Password :
+            <input type="password" password="Password" size="30" maxlength="30" />
+        </li>
+        <br />
+        <li>
+            Please Check all the emotions that apply to you:
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Angry" /> Angry
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Sad" /> Sad
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Happy" /> Happy
+        </li>
+        <li>
+            <input type="checkbox" name="genre" value="Ambivalent" /> Ambivalent
+        </li>
+        <li>
+            How satisfied were you with our services?
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Very satisfied" /> Very satisfied 
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Satisfied" /> Satisfied
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Didn't Care" /> Didn't Care
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Dissatisfied" /> Dissatisfied
+        </li>
+        <li>
+            <input type="radio" name="genre" value="Very Dissatisfied" /> Very Dissatisfied
+        </li>
+        <li>
+            Further comments: <textarea name="comments" cols="20" rows="4"></textarea>
+        </li>
+        <li>
+            Bio photo: <input type="url" name="image" /><input type="submit" name="Choose" value="Choose" />
+        </li>
+        <li>
+            <label for="Username">Location visited</label>
+            <input type="url" name="Location" />
+        </li>                        
+    </ul>
+    <br /><input type="submit" value="Submit" />
+    
+</body>
+</html>
